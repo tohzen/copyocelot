@@ -1,0 +1,350 @@
+#app {
+    height: auto;
+    width: auto;
+    font-size: 1em;
+    padding: 10px;
+    background-color: none;
+    display: grid;
+    grid-template-areas: 
+    "hdr hdr hdr hdr"
+    "nav nav nav nav"
+    "mid mid mid mid"
+    "mid mid mid mid"
+    "mid2 mid2 mid2 mid2"
+    "mid3 mid3 mid3 mid3"
+    "ftr ftr ftr ftr"
+    "ftr2 ftr2 ftr2 ftr2"
+    "ftr3 ftr3 ftr3 ftr3"
+  }
+  
+  .box {
+    width: 100%;
+    height: 100%;
+  
+  }
+  #hdr { 
+    background-color: #2B2056;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    grid-area: hdr;
+    height: 60px;
+    
+  }
+  #hdr a {
+    margin-left: 10px;
+  }
+  #nav {
+    text-align: center;
+    grid-area: nav;
+    display: grid;
+    grid-template-areas: 
+    "brg brg lnk lnk"
+    "brg brg par1 par1"
+    "brg brg par1 par1"
+    "plc plc plc plc"
+    "plc plc plc plc"
+  }
+  #mid {
+    grid-area: mid;
+    display: flex;
+    justify-content: center;
+    grid-template-areas: 
+    "box1 box2 box3 plc"
+  }
+  #box1 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: box1;
+    width: 380px;
+
+    
+  }
+  #box2 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: box2;
+    width: 380px;
+  }
+  #box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: box3;
+    width: 380px;
+
+  }
+  #mid2 {
+    grid-area: mid2;
+    margin-top: 100px;
+    display: inline-flex;
+    grid-template-areas:
+    "bx1 plc plc plc"
+    "plc plc plc plc"
+  }
+  
+  #bx1 {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 100px;
+    flex-direction: column;
+    grid-area: bx1;
+    width: 580px;
+  }
+  #bx2 {
+    display:flex;
+    flex-direction: column;
+    grid-area: bx2;
+  }
+
+  #mid3 {
+    grid-area: mid3;
+    display: inline-flex;
+    grid-template-areas:
+    "mx1 plc plc mx2"
+    "plc plc plc plc"
+
+  }
+  #mx1 {
+    display: flex;
+    margin-left: 250px;
+    align-items: center;
+    grid-area: mx1;
+  }
+  #mx2 {
+    display: flex;
+    margin-right: 170px;
+    grid-area: mx2;
+    width: 570px;
+  }
+
+  #mpic {
+    grid-area: mpic;
+    height: 90px;
+    text-align: center;
+    margin-top: 150px;
+    
+    
+  }
+  #mid2 {
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
+  #mid3 {
+    display: inline-flex;
+    justify-content: space-between;    
+    background-color: #212425;
+  }
+  #mlnk{
+    grid-area: mlnk;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+
+  }
+  #btn {
+    background-color: #005ABC;
+    border-radius: 5px;
+    border-style: none;
+    padding: 9px 20px 8px;
+    height: 50px;
+    width: 190px;
+    margin-left: 20px;
+  }
+  #btn2 {
+    background-color: 005ABC;
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px 16px;
+    vertical-align: center;
+    height: 50px;
+    width: 245px;
+    background-color: #005ABC;
+    
+    
+
+  }
+  #bar {
+    height: 50px;
+    width: 420px;
+    border-radius: 5px;
+    border-style: solid;
+  }
+  #bar2 {
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    border-style: solid;
+    margin-bottom: 16px;
+
+  }
+  #brg {
+    grid-area: brg;
+    justify-self: start;
+  }
+  #lnk {
+    grid-area: lnk;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+    display: inline-flex;
+    text-decoration: none;
+  }
+  #lnk a {
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: bold;
+
+  }
+  #lstlnk {
+    font-family: sans-serif;
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+  }
+  #lstlnk a {
+    color: white;
+  }
+  #toplink {
+    color: white;
+  }
+  #btmlnk a {
+    font-family: cursive;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-top: 20;
+  }
+  #btmlnk2 a {
+    font-family: cursive;
+    list-style: none;
+    color: white;
+  }
+  
+  #par1 {
+    grid-area: par1;
+    font-size: 4em;
+    font-family: sans-serif;
+    margin-top: 500px;
+    justify-content: center;
+    text-align: left;
+
+  }
+  #lst1 {
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
+  }
+  #lst1 a {
+    text-decoration: none;
+    
+  }
+  #lst1 ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+  }
+  #lst1{
+    
+
+  }
+  #ftr {
+    grid-area: ftr;
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style: none;
+    
+    
+  }
+  #ftrbtn {
+    background-color: transparent;
+    font-family: sans-serif;
+    border-color: rgb(48, 52, 54);
+    border-radius: 5px;
+    border: 1px solid  rgb(48, 52, 54);
+    padding: 9px 20px 8px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 245px;
+
+  }
+  #lst2 {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+  }
+  #lst3 ul{
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  #lst3p {
+    display: flex;
+    justify-content: left;
+  }
+
+  #ftr2 {
+    grid-area: ftr2;
+    display: inline-flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #2B2C6C;
+    list-style: none;
+  }
+  #sub2 {
+    display: inline-flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+  }
+  #ftr3 {
+    grid-area: ftr3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 130px;
+  }
+  #sub3 {
+    display: flex;
+    color: white;
+    margin-bottom: 60px;
+    margin-right: 500px;
+    
+  }
+  #sub3lst {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 50px;
+  }
+  #sub3lst a {
+    color: white;
+  } 
+  #sub3lst2 {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  #sub3lst2 a {
+    color: white;
+  }
+  
+  
+  
+  .footer {
+  background-color: #282888;
+  text-align: center;
+  border-top: 1px solid black; 
+  list-style: none;
+    
+    
+  }
+  
